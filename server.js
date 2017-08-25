@@ -80,14 +80,15 @@ app.get("/scrape", function(req, res) {
                                             console.log(doc);
                                         }
                                     });
-                                    else {
-                                        console.log("Same title")
-                                    }
-
                                 };
-                            })
+                                // else {
+                                //     console.log("Same title")
+                                // }
 
-                        };
+
+                            });
+
+                        });
                     });
                 // Tell the browser that we finished scraping the text
                 //res.send("Scrape Complete");
