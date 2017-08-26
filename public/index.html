@@ -3,14 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Scraping With Mongoose</title>
+    <title>The best NHL articles EVER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-knight"></span> Get the Latest NHL articles!</h1>
+            <hr>
+            <h2 class="text-center">GO KINGS GO!</h2>
+            <br>
+            <div class="text-center">
+                <a href="/scrape">
+                    <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Click to get the latest!</button>
+                </a>
+            </div>
+        </div>
     <style>
     body {
         background-color: #F2F6D0
     }
     h1,h2{
-      background: silver;
-      text-align: center;
+/*      background: silver;
+      text-align: center;*/
     }
 
     #wrapper {
@@ -58,14 +70,14 @@
     button{
         font-size: 30px;
     }
+    .jumbotron{
+        background-color: silver;
+    }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
-        <h1>Find the latest NHL articles and write a note about it!</h1>
-        <h2><i>GO KINGS GO!</i></h2>
-        <button><a href="/scrape">Get the latest articles about the NHL!</a></button><br><br>
 
         <div id="articles"></div>
         <div id="notes"></div>
