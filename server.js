@@ -1,6 +1,3 @@
-/* Showing Mongoose's "Populated" Method
- * =============================================== */
-
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -64,6 +61,7 @@ app.get("/scrape", function(req, res) {
             result.link = $(element).parent().attr("href");
 
             Article.count({ title: result.title }, function(err, hasone) {
+                // Makes sure theres no duplicates
                 if (hasone === 0) {
 
 
@@ -83,7 +81,7 @@ app.get("/scrape", function(req, res) {
             });
         });
     });
-
+    //Send back to the index
     res.redirect("/");
 
 });
